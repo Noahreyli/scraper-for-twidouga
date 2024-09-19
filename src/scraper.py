@@ -33,13 +33,13 @@ def preserveToday():
     os.remove("binary")
 
 
-extension_path = "C:\\Users\\aokit\\Desktop\\scraper-for-twidouga\\src\\profile\\Profile1\\Extensions\\bgnkhhnnamicmpeenaelnjfhikgbkllg\\4.1.1_0"
+extension_path = "C:\\Users\\aokit\\Desktop\\twidouga.net-scraper\\src\\profile\\Profile1\\Extensions\\bgnkhhnnamicmpeenaelnjfhikgbkllg\\4.1.1_0"
 options = Options()
-options.add_argument("--user-data-dir=C:\\Users\\aokit\\Desktop\\scraper-for-twidouga\\src\\profile")
+options.add_argument("--user-data-dir=C:\\Users\\aokit\\Desktop\\twidouga.net-scraper\\src\\profile")
 options.add_argument("--profile-directory=Profile1")
 options.add_argument("--lang=jp")
 options.add_argument(f"load-extension={extension_path}")
-exePath = "C:\\Users\\aokit\\Desktop\\scraper-for-twidouga\\src\\chromedriver.exe"
+exePath = "C:\\Users\\aokit\\Desktop\\twidouga.net-scraper\\src\\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=exePath, options=options)
 
 url = "https://www.twidouga.net/realtime_t.php"
