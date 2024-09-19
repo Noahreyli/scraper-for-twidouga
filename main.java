@@ -30,7 +30,7 @@ public class Main {
         // 取得完了・DiscordにURLを送信
         for (int i = 0; i < list.size(); i++) {
             ArrayList<String> urls = list.get(i);
-            dw.addEmbed(new DiscordWebhook.EmbedObject().setTitle("scraper-for-twidouga").setDescription(strDate)
+            dw.addEmbed(new DiscordWebhook.EmbedObject().setTitle("twidouga.net-scraper").setDescription(strDate)
                     .setImage(urls.get(1)).setUrl(urls.get(0)));
             if(dw.embeds.size() == 10) {
                 dw.execute();
